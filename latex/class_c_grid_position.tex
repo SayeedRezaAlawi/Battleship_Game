@@ -1,0 +1,176 @@
+\hypertarget{class_c_grid_position}{}\doxysection{C\+Grid\+Position Class Reference}
+\label{class_c_grid_position}\index{CGridPosition@{CGridPosition}}
+
+
+{\ttfamily \#include $<$C\+Grid\+Position.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_grid_position_ac3f1be0d4ffa10e347508191dc0cbe5c}{C\+Grid\+Position}} (char \mbox{\hyperlink{class_c_grid_position_a287333630a1eb8e5466d25ac5a53a90f}{row}}=\textquotesingle{}A\textquotesingle{}, int \mbox{\hyperlink{class_c_grid_position_a602604872b1ac2af7bf3dd7e911c546f}{column}}=1)
+\item 
+\mbox{\hyperlink{class_c_grid_position_a1370221bcbae6a614117efc5eebadf3d}{C\+Grid\+Position}} (std\+::string \mbox{\hyperlink{class_c_grid_position_a1ee8ccfad681e510aec92102a397c26d}{position}})
+\item 
+bool \mbox{\hyperlink{class_c_grid_position_abc93efce709f2f6b991461612fbf33c6}{is\+Valid}} () const
+\item 
+char \mbox{\hyperlink{class_c_grid_position_a30f222ff897283b03236421cad8732d7}{get\+Row}} () const
+\item 
+int \mbox{\hyperlink{class_c_grid_position_a77347600f3ee8d74ab73e6732c6ab99d}{get\+Column}} () const
+\item 
+\mbox{\hyperlink{class_c_grid_position_a64b415488be81e09e6e65fe7c603e880}{operator std\+::string}} ()
+\item 
+bool \mbox{\hyperlink{class_c_grid_position_a73c6ca0f6eb62ccb1b1b1b52589c6f4a}{operator==}} (const \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} other) const
+\item 
+bool \mbox{\hyperlink{class_c_grid_position_aace74983b0e9acf6f9eb1ad24069a0b9}{operator$<$}} (const \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} other) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_c_grid_position_a287333630a1eb8e5466d25ac5a53a90f}{row}}
+\item 
+int \mbox{\hyperlink{class_c_grid_position_a602604872b1ac2af7bf3dd7e911c546f}{column}}
+\item 
+std\+::string \mbox{\hyperlink{class_c_grid_position_a1ee8ccfad681e510aec92102a397c26d}{position}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_c_grid_position_abcebd8e47856bf75799a920e07566ab4}{operator$<$$<$}} (std\+::ostream \&lhs, \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} rhs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a specific position of grid. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_grid_position_ac3f1be0d4ffa10e347508191dc0cbe5c}\label{class_c_grid_position_ac3f1be0d4ffa10e347508191dc0cbe5c}} 
+\index{CGridPosition@{CGridPosition}!CGridPosition@{CGridPosition}}
+\index{CGridPosition@{CGridPosition}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{CGridPosition()}{CGridPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+Grid\+Position\+::\+C\+Grid\+Position (\begin{DoxyParamCaption}\item[{char}]{row = {\ttfamily \textquotesingle{}A\textquotesingle{}},  }\item[{int}]{column = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Constructor of \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}. 
+\begin{DoxyParams}{Parameters}
+{\em row} & input row index of a position. \\
+\hline
+{\em column} & input column index of a position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_grid_position_a1370221bcbae6a614117efc5eebadf3d}\label{class_c_grid_position_a1370221bcbae6a614117efc5eebadf3d}} 
+\index{CGridPosition@{CGridPosition}!CGridPosition@{CGridPosition}}
+\index{CGridPosition@{CGridPosition}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{CGridPosition()}{CGridPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+Grid\+Position\+::\+C\+Grid\+Position (\begin{DoxyParamCaption}\item[{std\+::string}]{position }\end{DoxyParamCaption})}
+
+Constructor of \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}. 
+\begin{DoxyParams}{Parameters}
+{\em position} & input string index of a position. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_grid_position_a77347600f3ee8d74ab73e6732c6ab99d}\label{class_c_grid_position_a77347600f3ee8d74ab73e6732c6ab99d}} 
+\index{CGridPosition@{CGridPosition}!getColumn@{getColumn}}
+\index{getColumn@{getColumn}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{getColumn()}{getColumn()}}
+{\footnotesize\ttfamily int C\+Grid\+Position\+::get\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the column index of a position. \mbox{\Hypertarget{class_c_grid_position_a30f222ff897283b03236421cad8732d7}\label{class_c_grid_position_a30f222ff897283b03236421cad8732d7}} 
+\index{CGridPosition@{CGridPosition}!getRow@{getRow}}
+\index{getRow@{getRow}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{getRow()}{getRow()}}
+{\footnotesize\ttfamily char C\+Grid\+Position\+::get\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the row index of a position. \mbox{\Hypertarget{class_c_grid_position_abc93efce709f2f6b991461612fbf33c6}\label{class_c_grid_position_abc93efce709f2f6b991461612fbf33c6}} 
+\index{CGridPosition@{CGridPosition}!isValid@{isValid}}
+\index{isValid@{isValid}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily bool C\+Grid\+Position\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Checks if the position is valid. \mbox{\Hypertarget{class_c_grid_position_a64b415488be81e09e6e65fe7c603e880}\label{class_c_grid_position_a64b415488be81e09e6e65fe7c603e880}} 
+\index{CGridPosition@{CGridPosition}!operator std::string@{operator std::string}}
+\index{operator std::string@{operator std::string}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{operator std::string()}{operator std::string()}}
+{\footnotesize\ttfamily C\+Grid\+Position\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+String Overloading. \mbox{\Hypertarget{class_c_grid_position_aace74983b0e9acf6f9eb1ad24069a0b9}\label{class_c_grid_position_aace74983b0e9acf6f9eb1ad24069a0b9}} 
+\index{CGridPosition@{CGridPosition}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool C\+Grid\+Position\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}}]{other }\end{DoxyParamCaption}) const}
+
+Less than overloading is used to compare if one position is less than other or not, whic can help to find occupied and block area in next phases. 
+\begin{DoxyParams}{Parameters}
+{\em other} & position of right hand side. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_grid_position_a73c6ca0f6eb62ccb1b1b1b52589c6f4a}\label{class_c_grid_position_a73c6ca0f6eb62ccb1b1b1b52589c6f4a}} 
+\index{CGridPosition@{CGridPosition}!operator==@{operator==}}
+\index{operator==@{operator==}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool C\+Grid\+Position\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}}]{other }\end{DoxyParamCaption}) const}
+
+Equalency overloading. 
+\begin{DoxyParams}{Parameters}
+{\em other} & position of right hand side. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_c_grid_position_abcebd8e47856bf75799a920e07566ab4}\label{class_c_grid_position_abcebd8e47856bf75799a920e07566ab4}} 
+\index{CGridPosition@{CGridPosition}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{lhs,  }\item[{\mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+ostream overloading as a friend function. 
+\begin{DoxyParams}{Parameters}
+{\em lhs} & right hand side position. \\
+\hline
+{\em rhs} & right hand side position. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_grid_position_a602604872b1ac2af7bf3dd7e911c546f}\label{class_c_grid_position_a602604872b1ac2af7bf3dd7e911c546f}} 
+\index{CGridPosition@{CGridPosition}!column@{column}}
+\index{column@{column}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{column}{column}}
+{\footnotesize\ttfamily int C\+Grid\+Position\+::column\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & column index of Grid\+Position . \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_grid_position_a1ee8ccfad681e510aec92102a397c26d}\label{class_c_grid_position_a1ee8ccfad681e510aec92102a397c26d}} 
+\index{CGridPosition@{CGridPosition}!position@{position}}
+\index{position@{position}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily std\+::string C\+Grid\+Position\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & define a string as position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_grid_position_a287333630a1eb8e5466d25ac5a53a90f}\label{class_c_grid_position_a287333630a1eb8e5466d25ac5a53a90f}} 
+\index{CGridPosition@{CGridPosition}!row@{row}}
+\index{row@{row}!CGridPosition@{CGridPosition}}
+\doxysubsubsection{\texorpdfstring{row}{row}}
+{\footnotesize\ttfamily char C\+Grid\+Position\+::row\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Row index of Grid\+Position . \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+my\+Code/\mbox{\hyperlink{_c_grid_position_8h}{C\+Grid\+Position.\+h}}\item 
+my\+Code/\mbox{\hyperlink{_c_grid_position_8cpp}{C\+Grid\+Position.\+cpp}}\end{DoxyCompactItemize}

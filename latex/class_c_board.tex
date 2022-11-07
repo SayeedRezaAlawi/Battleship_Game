@@ -1,0 +1,103 @@
+\hypertarget{class_c_board}{}\doxysection{C\+Board Class Reference}
+\label{class_c_board}\index{CBoard@{CBoard}}
+
+
+{\ttfamily \#include $<$C\+Board.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_board_a828139cbfc98f165b74c063f2b848fa8}{C\+Board}} (int rows, int columns)
+\item 
+int \mbox{\hyperlink{class_c_board_a69a979ba533c4a8e4d41d8ccfe625194}{get\+Rows}} ()
+\item 
+int \mbox{\hyperlink{class_c_board_a56a1bfeb64673d4317d1905a54ff8bbc}{get\+Columns}} ()
+\item 
+\mbox{\hyperlink{class_c_own_grid}{C\+Own\+Grid}} \& \mbox{\hyperlink{class_c_board_a56fde7dc8042f8837f485259cb7655e3}{get\+Own\+Grid}} ()
+\item 
+\mbox{\hyperlink{class_c_opponent_grid}{C\+Opponent\+Grid}} \& \mbox{\hyperlink{class_c_board_aa8c2f531de81dac6fe46b478399bc297}{get\+Opponent\+Grid}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_own_grid}{C\+Own\+Grid}} \mbox{\hyperlink{class_c_board_a54d400c09ed0a7f06537c3472d80a74c}{own\+Grid}}
+\item 
+\mbox{\hyperlink{class_c_opponent_grid}{C\+Opponent\+Grid}} \mbox{\hyperlink{class_c_board_a86d073f15d56a3ed46235b651cb69537}{opponent\+Grid}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a Battleship Game Board/ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_board_a828139cbfc98f165b74c063f2b848fa8}\label{class_c_board_a828139cbfc98f165b74c063f2b848fa8}} 
+\index{CBoard@{CBoard}!CBoard@{CBoard}}
+\index{CBoard@{CBoard}!CBoard@{CBoard}}
+\doxysubsubsection{\texorpdfstring{CBoard()}{CBoard()}}
+{\footnotesize\ttfamily C\+Board\+::\+C\+Board (\begin{DoxyParamCaption}\item[{int}]{rows,  }\item[{int}]{columns }\end{DoxyParamCaption})}
+
+Constructor of \mbox{\hyperlink{class_c_board}{C\+Board}}. 
+\begin{DoxyParams}{Parameters}
+{\em rows} & number of board rows. \\
+\hline
+{\em columns} & number of board columns. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_board_a56a1bfeb64673d4317d1905a54ff8bbc}\label{class_c_board_a56a1bfeb64673d4317d1905a54ff8bbc}} 
+\index{CBoard@{CBoard}!getColumns@{getColumns}}
+\index{getColumns@{getColumns}!CBoard@{CBoard}}
+\doxysubsubsection{\texorpdfstring{getColumns()}{getColumns()}}
+{\footnotesize\ttfamily int C\+Board\+::get\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the number of columns \mbox{\Hypertarget{class_c_board_aa8c2f531de81dac6fe46b478399bc297}\label{class_c_board_aa8c2f531de81dac6fe46b478399bc297}} 
+\index{CBoard@{CBoard}!getOpponentGrid@{getOpponentGrid}}
+\index{getOpponentGrid@{getOpponentGrid}!CBoard@{CBoard}}
+\doxysubsubsection{\texorpdfstring{getOpponentGrid()}{getOpponentGrid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_opponent_grid}{C\+Opponent\+Grid}} \& C\+Board\+::get\+Opponent\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the opponent grid. \mbox{\Hypertarget{class_c_board_a56fde7dc8042f8837f485259cb7655e3}\label{class_c_board_a56fde7dc8042f8837f485259cb7655e3}} 
+\index{CBoard@{CBoard}!getOwnGrid@{getOwnGrid}}
+\index{getOwnGrid@{getOwnGrid}!CBoard@{CBoard}}
+\doxysubsubsection{\texorpdfstring{getOwnGrid()}{getOwnGrid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_own_grid}{C\+Own\+Grid}} \& C\+Board\+::get\+Own\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the own grid. \mbox{\Hypertarget{class_c_board_a69a979ba533c4a8e4d41d8ccfe625194}\label{class_c_board_a69a979ba533c4a8e4d41d8ccfe625194}} 
+\index{CBoard@{CBoard}!getRows@{getRows}}
+\index{getRows@{getRows}!CBoard@{CBoard}}
+\doxysubsubsection{\texorpdfstring{getRows()}{getRows()}}
+{\footnotesize\ttfamily int C\+Board\+::get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the number of rows 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_board_a86d073f15d56a3ed46235b651cb69537}\label{class_c_board_a86d073f15d56a3ed46235b651cb69537}} 
+\index{CBoard@{CBoard}!opponentGrid@{opponentGrid}}
+\index{opponentGrid@{opponentGrid}!CBoard@{CBoard}}
+\doxysubsubsection{\texorpdfstring{opponentGrid}{opponentGrid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_opponent_grid}{C\+Opponent\+Grid}} C\+Board\+::opponent\+Grid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em opponent\+Grid} & Opponent\+Grid in order to access Opponent grid positions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_board_a54d400c09ed0a7f06537c3472d80a74c}\label{class_c_board_a54d400c09ed0a7f06537c3472d80a74c}} 
+\index{CBoard@{CBoard}!ownGrid@{ownGrid}}
+\index{ownGrid@{ownGrid}!CBoard@{CBoard}}
+\doxysubsubsection{\texorpdfstring{ownGrid}{ownGrid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_own_grid}{C\+Own\+Grid}} C\+Board\+::own\+Grid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em own\+Grid} & Own\+Grid in order to access own grid positions. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+my\+Code/\mbox{\hyperlink{_c_board_8h}{C\+Board.\+h}}\item 
+my\+Code/\mbox{\hyperlink{_c_board_8cpp}{C\+Board.\+cpp}}\end{DoxyCompactItemize}

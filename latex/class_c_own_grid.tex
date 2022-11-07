@@ -1,0 +1,178 @@
+\hypertarget{class_c_own_grid}{}\doxysection{C\+Own\+Grid Class Reference}
+\label{class_c_own_grid}\index{COwnGrid@{COwnGrid}}
+
+
+{\ttfamily \#include $<$C\+Own\+Grid.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_own_grid_a467539f25fe906cb22694a2491eeb77b}{C\+Own\+Grid}} (int \mbox{\hyperlink{class_c_own_grid_ac69e94123e87817adac61b43a39b2fa9}{rows}}=10, int \mbox{\hyperlink{class_c_own_grid_a641d36980f1e3861e7d9398216410cb1}{columns}}=10)
+\item 
+int \mbox{\hyperlink{class_c_own_grid_aed748fe9b58ea27caaf634685bc415c4}{get\+Rows}} ()
+\item 
+int \mbox{\hyperlink{class_c_own_grid_aa37351818f6f93b9ab3ac09e3fc8f296}{get\+Columns}} ()
+\item 
+bool \mbox{\hyperlink{class_c_own_grid_ac590cadf21912897fecefd9f5d737989}{place\+Ship}} (const \mbox{\hyperlink{class_c_ship}{C\+Ship}} \&ship)
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{class_c_ship}{C\+Ship}} $>$ \mbox{\hyperlink{class_c_own_grid_ab9175145a6edb12c3bd1bbbd73ebe20c}{get\+Ships}} ()
+\item 
+\mbox{\hyperlink{class_c_shot_aab7e90eddda5d2ee3f6a04ad17282451}{C\+Shot\+::\+Impact}} \mbox{\hyperlink{class_c_own_grid_a39a9af3c58e34052f20873ceeeb0192e}{take\+Blow}} (const \mbox{\hyperlink{class_c_shot}{C\+Shot}} \&shot)
+\item 
+const std\+::set$<$ \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} $>$ \mbox{\hyperlink{class_c_own_grid_a006cbab4ffc3d97ccaba39ec387a4ed9}{get\+Shot\+At}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_own_grid_ac69e94123e87817adac61b43a39b2fa9}{rows}}
+\item 
+int \mbox{\hyperlink{class_c_own_grid_a641d36980f1e3861e7d9398216410cb1}{columns}}
+\item 
+int \mbox{\hyperlink{class_c_own_grid_a9c6fb715c57c8beebbf27b01914065fd}{shipnumbers}} = 0
+\item 
+\mbox{\hyperlink{class_c_ship}{C\+Ship}} $\ast$ \mbox{\hyperlink{class_c_own_grid_a5d8a2d56e22da0e10602e949091d2c8c}{ships}} \mbox{[}10\mbox{]}
+\item 
+std\+::set$<$ \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} $>$ \mbox{\hyperlink{class_c_own_grid_a4c1ca8a19d998d27fbad12ff21ee2853}{shot\+At}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates Own grid. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_own_grid_a467539f25fe906cb22694a2491eeb77b}\label{class_c_own_grid_a467539f25fe906cb22694a2491eeb77b}} 
+\index{COwnGrid@{COwnGrid}!COwnGrid@{COwnGrid}}
+\index{COwnGrid@{COwnGrid}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{COwnGrid()}{COwnGrid()}}
+{\footnotesize\ttfamily C\+Own\+Grid\+::\+C\+Own\+Grid (\begin{DoxyParamCaption}\item[{int}]{rows = {\ttfamily 10},  }\item[{int}]{columns = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+Constructor of \mbox{\hyperlink{class_c_own_grid}{C\+Own\+Grid}}. 
+\begin{DoxyParams}{Parameters}
+{\em rows} & number of grid rows. \\
+\hline
+{\em columns} & number of grid columns. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_own_grid_aa37351818f6f93b9ab3ac09e3fc8f296}\label{class_c_own_grid_aa37351818f6f93b9ab3ac09e3fc8f296}} 
+\index{COwnGrid@{COwnGrid}!getColumns@{getColumns}}
+\index{getColumns@{getColumns}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{getColumns()}{getColumns()}}
+{\footnotesize\ttfamily int C\+Own\+Grid\+::get\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the number of columns \mbox{\Hypertarget{class_c_own_grid_aed748fe9b58ea27caaf634685bc415c4}\label{class_c_own_grid_aed748fe9b58ea27caaf634685bc415c4}} 
+\index{COwnGrid@{COwnGrid}!getRows@{getRows}}
+\index{getRows@{getRows}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{getRows()}{getRows()}}
+{\footnotesize\ttfamily int C\+Own\+Grid\+::get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the number of rows \mbox{\Hypertarget{class_c_own_grid_ab9175145a6edb12c3bd1bbbd73ebe20c}\label{class_c_own_grid_ab9175145a6edb12c3bd1bbbd73ebe20c}} 
+\index{COwnGrid@{COwnGrid}!getShips@{getShips}}
+\index{getShips@{getShips}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{getShips()}{getShips()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{class_c_ship}{C\+Ship}} $>$ C\+Own\+Grid\+::get\+Ships (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A vector container which keeps ships information. 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_c_ship}{C\+Ship}}} & container type. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_own_grid_a006cbab4ffc3d97ccaba39ec387a4ed9}\label{class_c_own_grid_a006cbab4ffc3d97ccaba39ec387a4ed9}} 
+\index{COwnGrid@{COwnGrid}!getShotAt@{getShotAt}}
+\index{getShotAt@{getShotAt}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{getShotAt()}{getShotAt()}}
+{\footnotesize\ttfamily const std\+::set$<$ \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} $>$ C\+Own\+Grid\+::get\+Shot\+At (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a set container which keeps shots informations. 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}} & container type. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_own_grid_ac590cadf21912897fecefd9f5d737989}\label{class_c_own_grid_ac590cadf21912897fecefd9f5d737989}} 
+\index{COwnGrid@{COwnGrid}!placeShip@{placeShip}}
+\index{placeShip@{placeShip}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{placeShip()}{placeShip()}}
+{\footnotesize\ttfamily bool C\+Own\+Grid\+::place\+Ship (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_ship}{C\+Ship}} \&}]{ship }\end{DoxyParamCaption})}
+
+Method to place a ship of the grid. 
+\begin{DoxyParams}{Parameters}
+{\em ship} & type of ship. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_own_grid_a39a9af3c58e34052f20873ceeeb0192e}\label{class_c_own_grid_a39a9af3c58e34052f20873ceeeb0192e}} 
+\index{COwnGrid@{COwnGrid}!takeBlow@{takeBlow}}
+\index{takeBlow@{takeBlow}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{takeBlow()}{takeBlow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_shot_aab7e90eddda5d2ee3f6a04ad17282451}{C\+Shot\+::\+Impact}} C\+Own\+Grid\+::take\+Blow (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_shot}{C\+Shot}} \&}]{shot }\end{DoxyParamCaption})}
+
+Returns impact of a shot. 
+\begin{DoxyParams}{Parameters}
+{\em shot} & shot on the own board. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_own_grid_a641d36980f1e3861e7d9398216410cb1}\label{class_c_own_grid_a641d36980f1e3861e7d9398216410cb1}} 
+\index{COwnGrid@{COwnGrid}!columns@{columns}}
+\index{columns@{columns}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{columns}{columns}}
+{\footnotesize\ttfamily int C\+Own\+Grid\+::columns\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em columns} & number of columns of grid. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_own_grid_ac69e94123e87817adac61b43a39b2fa9}\label{class_c_own_grid_ac69e94123e87817adac61b43a39b2fa9}} 
+\index{COwnGrid@{COwnGrid}!rows@{rows}}
+\index{rows@{rows}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily int C\+Own\+Grid\+::rows\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & number of rows of grid. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_own_grid_a9c6fb715c57c8beebbf27b01914065fd}\label{class_c_own_grid_a9c6fb715c57c8beebbf27b01914065fd}} 
+\index{COwnGrid@{COwnGrid}!shipnumbers@{shipnumbers}}
+\index{shipnumbers@{shipnumbers}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{shipnumbers}{shipnumbers}}
+{\footnotesize\ttfamily int C\+Own\+Grid\+::shipnumbers = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shipnumbers} & current number of ships on the board. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_own_grid_a5d8a2d56e22da0e10602e949091d2c8c}\label{class_c_own_grid_a5d8a2d56e22da0e10602e949091d2c8c}} 
+\index{COwnGrid@{COwnGrid}!ships@{ships}}
+\index{ships@{ships}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{ships}{ships}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_ship}{C\+Ship}}$\ast$ C\+Own\+Grid\+::ships\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ships} & numbers of pointer to show ships on own grid. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_own_grid_a4c1ca8a19d998d27fbad12ff21ee2853}\label{class_c_own_grid_a4c1ca8a19d998d27fbad12ff21ee2853}} 
+\index{COwnGrid@{COwnGrid}!shotAt@{shotAt}}
+\index{shotAt@{shotAt}!COwnGrid@{COwnGrid}}
+\doxysubsubsection{\texorpdfstring{shotAt}{shotAt}}
+{\footnotesize\ttfamily std\+::set$<$\mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}$>$ C\+Own\+Grid\+::shot\+At\hspace{0.3cm}{\ttfamily [private]}}
+
+A set container which keeps shot grid positions. 
+\begin{DoxyParams}{Parameters}
+{\em shot\+At} & shot position on the grid. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+my\+Code/\mbox{\hyperlink{_c_own_grid_8h}{C\+Own\+Grid.\+h}}\item 
+my\+Code/\mbox{\hyperlink{_c_own_grid_8cpp}{C\+Own\+Grid.\+cpp}}\end{DoxyCompactItemize}

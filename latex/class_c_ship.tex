@@ -1,0 +1,140 @@
+\hypertarget{class_c_ship}{}\doxysection{C\+Ship Class Reference}
+\label{class_c_ship}\index{CShip@{CShip}}
+
+
+{\ttfamily \#include $<$C\+Ship.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_ship_af7a5167f690b806e9cc661891ab3d149}{C\+Ship}} (const \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} \&\mbox{\hyperlink{class_c_ship_aa70ebe9ebb69dfdaef54cedad0d315d2}{bow}}, const \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} \&\mbox{\hyperlink{class_c_ship_a57bba6b7b366dc72cd90fcd23c203fe6}{stern}})
+\item 
+bool \mbox{\hyperlink{class_c_ship_a00ef3a48b967eb247053c9c6075e1c9d}{is\+Valid}} ()
+\item 
+\mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} \mbox{\hyperlink{class_c_ship_a6b2e734dd6a8bb8fc38b7b1a7436d839}{get\+Bow}} () const
+\item 
+\mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} \mbox{\hyperlink{class_c_ship_a452026b65b7d57d680f752237a3b2160}{get\+Stern}} () const
+\item 
+int \mbox{\hyperlink{class_c_ship_af461c85b3b6309c5f89b5c25a282295e}{length}} () const
+\item 
+const std\+::set$<$ \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} $>$ \mbox{\hyperlink{class_c_ship_a1ff7e6c22dda6499477fab17e08764e0}{occupied\+Area}} () const
+\item 
+const std\+::set$<$ \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} $>$ \mbox{\hyperlink{class_c_ship_ad8a3200c75990f6157b603a2b31f5e7f}{blocked\+Area}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} \mbox{\hyperlink{class_c_ship_aa70ebe9ebb69dfdaef54cedad0d315d2}{bow}}
+\item 
+\mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} \mbox{\hyperlink{class_c_ship_a57bba6b7b366dc72cd90fcd23c203fe6}{stern}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_c_ship_abcebd8e47856bf75799a920e07566ab4}{operator$<$$<$}} (std\+::ostream \&lhs, \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} rhs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates ship. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_ship_af7a5167f690b806e9cc661891ab3d149}\label{class_c_ship_af7a5167f690b806e9cc661891ab3d149}} 
+\index{CShip@{CShip}!CShip@{CShip}}
+\index{CShip@{CShip}!CShip@{CShip}}
+\doxysubsubsection{\texorpdfstring{CShip()}{CShip()}}
+{\footnotesize\ttfamily C\+Ship\+::\+C\+Ship (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} \&}]{bow,  }\item[{const \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} \&}]{stern }\end{DoxyParamCaption})}
+
+Constructor of \mbox{\hyperlink{class_c_ship}{C\+Ship}}. 
+\begin{DoxyParams}{Parameters}
+{\em bow} & bow position of a ship. \\
+\hline
+{\em stern} & stern position of a ship. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_ship_ad8a3200c75990f6157b603a2b31f5e7f}\label{class_c_ship_ad8a3200c75990f6157b603a2b31f5e7f}} 
+\index{CShip@{CShip}!blockedArea@{blockedArea}}
+\index{blockedArea@{blockedArea}!CShip@{CShip}}
+\doxysubsubsection{\texorpdfstring{blockedArea()}{blockedArea()}}
+{\footnotesize\ttfamily const std\+::set$<$ \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} $>$ C\+Ship\+::blocked\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns blocking area by ship as a set container. \mbox{\Hypertarget{class_c_ship_a6b2e734dd6a8bb8fc38b7b1a7436d839}\label{class_c_ship_a6b2e734dd6a8bb8fc38b7b1a7436d839}} 
+\index{CShip@{CShip}!getBow@{getBow}}
+\index{getBow@{getBow}!CShip@{CShip}}
+\doxysubsubsection{\texorpdfstring{getBow()}{getBow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} C\+Ship\+::get\+Bow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns bow position of a ship. \mbox{\Hypertarget{class_c_ship_a452026b65b7d57d680f752237a3b2160}\label{class_c_ship_a452026b65b7d57d680f752237a3b2160}} 
+\index{CShip@{CShip}!getStern@{getStern}}
+\index{getStern@{getStern}!CShip@{CShip}}
+\doxysubsubsection{\texorpdfstring{getStern()}{getStern()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} C\+Ship\+::get\+Stern (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns stern position of a ship. \mbox{\Hypertarget{class_c_ship_a00ef3a48b967eb247053c9c6075e1c9d}\label{class_c_ship_a00ef3a48b967eb247053c9c6075e1c9d}} 
+\index{CShip@{CShip}!isValid@{isValid}}
+\index{isValid@{isValid}!CShip@{CShip}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily bool C\+Ship\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if a position for ship is valid or not. \mbox{\Hypertarget{class_c_ship_af461c85b3b6309c5f89b5c25a282295e}\label{class_c_ship_af461c85b3b6309c5f89b5c25a282295e}} 
+\index{CShip@{CShip}!length@{length}}
+\index{length@{length}!CShip@{CShip}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily int C\+Ship\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns length of a ship. \mbox{\Hypertarget{class_c_ship_a1ff7e6c22dda6499477fab17e08764e0}\label{class_c_ship_a1ff7e6c22dda6499477fab17e08764e0}} 
+\index{CShip@{CShip}!occupiedArea@{occupiedArea}}
+\index{occupiedArea@{occupiedArea}!CShip@{CShip}}
+\doxysubsubsection{\texorpdfstring{occupiedArea()}{occupiedArea()}}
+{\footnotesize\ttfamily const std\+::set$<$ \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} $>$ C\+Ship\+::occupied\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns occupied area by ship as a set container. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_c_ship_abcebd8e47856bf75799a920e07566ab4}\label{class_c_ship_abcebd8e47856bf75799a920e07566ab4}} 
+\index{CShip@{CShip}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!CShip@{CShip}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{lhs,  }\item[{\mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+ostream overloading as a friend function. 
+\begin{DoxyParams}{Parameters}
+{\em lhs} & right hand side position. \\
+\hline
+{\em rhs} & right hand side position. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_ship_aa70ebe9ebb69dfdaef54cedad0d315d2}\label{class_c_ship_aa70ebe9ebb69dfdaef54cedad0d315d2}} 
+\index{CShip@{CShip}!bow@{bow}}
+\index{bow@{bow}!CShip@{CShip}}
+\doxysubsubsection{\texorpdfstring{bow}{bow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} C\+Ship\+::bow\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em bow} & the bow position of a ship. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_ship_a57bba6b7b366dc72cd90fcd23c203fe6}\label{class_c_ship_a57bba6b7b366dc72cd90fcd23c203fe6}} 
+\index{CShip@{CShip}!stern@{stern}}
+\index{stern@{stern}!CShip@{CShip}}
+\doxysubsubsection{\texorpdfstring{stern}{stern}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}} C\+Ship\+::stern\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em stern} & the bow position of a ship. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+my\+Code/\mbox{\hyperlink{_c_ship_8h}{C\+Ship.\+h}}\item 
+my\+Code/\mbox{\hyperlink{_c_ship_8cpp}{C\+Ship.\+cpp}}\end{DoxyCompactItemize}

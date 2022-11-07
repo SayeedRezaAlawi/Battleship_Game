@@ -1,0 +1,143 @@
+\hypertarget{class_c_opponent_grid}{}\doxysection{C\+Opponent\+Grid Class Reference}
+\label{class_c_opponent_grid}\index{COpponentGrid@{COpponentGrid}}
+
+
+{\ttfamily \#include $<$C\+Opponent\+Grid.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_opponent_grid_a1d08303a904b536b1cf40af247ee05d5}{C\+Opponent\+Grid}} (int \mbox{\hyperlink{class_c_opponent_grid_a232f0817a59210d7a950f35ca1fff8d1}{rows}}=10, int \mbox{\hyperlink{class_c_opponent_grid_a6dbda192943e093afcaa7dbd90df055f}{columns}}=10)
+\item 
+int \mbox{\hyperlink{class_c_opponent_grid_aaa0220c892cac5026a870b064fe7ca09}{get\+Rows}} ()
+\item 
+int \mbox{\hyperlink{class_c_opponent_grid_a5fce16c3e334d1365e134dfd6db918d6}{get\+Columns}} ()
+\item 
+void \mbox{\hyperlink{class_c_opponent_grid_a643c2569f7d5eaba321fd0d539c5e883}{shotresult}} (const \mbox{\hyperlink{class_c_shot}{C\+Shot}} \&shot, \mbox{\hyperlink{class_c_shot_aab7e90eddda5d2ee3f6a04ad17282451}{C\+Shot\+::\+Impact}} impact)
+\item 
+const std\+::map$<$ \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}, \mbox{\hyperlink{class_c_shot_aab7e90eddda5d2ee3f6a04ad17282451}{C\+Shot\+::\+Impact}} $>$ \& \mbox{\hyperlink{class_c_opponent_grid_a7d93bcd87f9e001c04c461e6b1375f92}{get\+Shot\+At}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_opponent_grid_a232f0817a59210d7a950f35ca1fff8d1}{rows}}
+\item 
+int \mbox{\hyperlink{class_c_opponent_grid_a6dbda192943e093afcaa7dbd90df055f}{columns}}
+\item 
+std\+::map$<$ \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}, \mbox{\hyperlink{class_c_shot_aab7e90eddda5d2ee3f6a04ad17282451}{C\+Shot\+::\+Impact}} $>$ \mbox{\hyperlink{class_c_opponent_grid_afa7c46e421e51b1bb9ac3a5064ab5f32}{shots}}
+\item 
+\mbox{\hyperlink{class_c_ship}{C\+Ship}} $\ast$ \mbox{\hyperlink{class_c_opponent_grid_a02234059f30139809a374da4af707561}{sunken\+Ships}} \mbox{[}10\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates opponent grid. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_opponent_grid_a1d08303a904b536b1cf40af247ee05d5}\label{class_c_opponent_grid_a1d08303a904b536b1cf40af247ee05d5}} 
+\index{COpponentGrid@{COpponentGrid}!COpponentGrid@{COpponentGrid}}
+\index{COpponentGrid@{COpponentGrid}!COpponentGrid@{COpponentGrid}}
+\doxysubsubsection{\texorpdfstring{COpponentGrid()}{COpponentGrid()}}
+{\footnotesize\ttfamily C\+Opponent\+Grid\+::\+C\+Opponent\+Grid (\begin{DoxyParamCaption}\item[{int}]{rows = {\ttfamily 10},  }\item[{int}]{columns = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+Constructor of \mbox{\hyperlink{class_c_opponent_grid}{C\+Opponent\+Grid}}. 
+\begin{DoxyParams}{Parameters}
+{\em rows} & number of grid rows. \\
+\hline
+{\em columns} & number of grid columns. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_opponent_grid_a5fce16c3e334d1365e134dfd6db918d6}\label{class_c_opponent_grid_a5fce16c3e334d1365e134dfd6db918d6}} 
+\index{COpponentGrid@{COpponentGrid}!getColumns@{getColumns}}
+\index{getColumns@{getColumns}!COpponentGrid@{COpponentGrid}}
+\doxysubsubsection{\texorpdfstring{getColumns()}{getColumns()}}
+{\footnotesize\ttfamily int C\+Opponent\+Grid\+::get\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the number of columns \mbox{\Hypertarget{class_c_opponent_grid_aaa0220c892cac5026a870b064fe7ca09}\label{class_c_opponent_grid_aaa0220c892cac5026a870b064fe7ca09}} 
+\index{COpponentGrid@{COpponentGrid}!getRows@{getRows}}
+\index{getRows@{getRows}!COpponentGrid@{COpponentGrid}}
+\doxysubsubsection{\texorpdfstring{getRows()}{getRows()}}
+{\footnotesize\ttfamily int C\+Opponent\+Grid\+::get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return the number of rows \mbox{\Hypertarget{class_c_opponent_grid_a7d93bcd87f9e001c04c461e6b1375f92}\label{class_c_opponent_grid_a7d93bcd87f9e001c04c461e6b1375f92}} 
+\index{COpponentGrid@{COpponentGrid}!getShotAt@{getShotAt}}
+\index{getShotAt@{getShotAt}!COpponentGrid@{COpponentGrid}}
+\doxysubsubsection{\texorpdfstring{getShotAt()}{getShotAt()}}
+{\footnotesize\ttfamily const std\+::map$<$ \mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}, \mbox{\hyperlink{class_c_shot_aab7e90eddda5d2ee3f6a04ad17282451}{C\+Shot\+::\+Impact}} $>$ \& C\+Opponent\+Grid\+::get\+Shot\+At (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A map contains shots and impacts 
+\begin{DoxyParams}{Parameters}
+{\em shot} & shot \\
+\hline
+{\em Impact} & impact of shot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_opponent_grid_a643c2569f7d5eaba321fd0d539c5e883}\label{class_c_opponent_grid_a643c2569f7d5eaba321fd0d539c5e883}} 
+\index{COpponentGrid@{COpponentGrid}!shotresult@{shotresult}}
+\index{shotresult@{shotresult}!COpponentGrid@{COpponentGrid}}
+\doxysubsubsection{\texorpdfstring{shotresult()}{shotresult()}}
+{\footnotesize\ttfamily void C\+Opponent\+Grid\+::shotresult (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_shot}{C\+Shot}} \&}]{shot,  }\item[{\mbox{\hyperlink{class_c_shot_aab7e90eddda5d2ee3f6a04ad17282451}{C\+Shot\+::\+Impact}}}]{impact }\end{DoxyParamCaption})}
+
+Keeps the result of shots on the opponent grid. 
+\begin{DoxyParams}{Parameters}
+{\em shot} & shot \\
+\hline
+{\em Impact} & impact of shot \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_opponent_grid_a6dbda192943e093afcaa7dbd90df055f}\label{class_c_opponent_grid_a6dbda192943e093afcaa7dbd90df055f}} 
+\index{COpponentGrid@{COpponentGrid}!columns@{columns}}
+\index{columns@{columns}!COpponentGrid@{COpponentGrid}}
+\doxysubsubsection{\texorpdfstring{columns}{columns}}
+{\footnotesize\ttfamily int C\+Opponent\+Grid\+::columns\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em columns} & number of columns of grid. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_opponent_grid_a232f0817a59210d7a950f35ca1fff8d1}\label{class_c_opponent_grid_a232f0817a59210d7a950f35ca1fff8d1}} 
+\index{COpponentGrid@{COpponentGrid}!rows@{rows}}
+\index{rows@{rows}!COpponentGrid@{COpponentGrid}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily int C\+Opponent\+Grid\+::rows\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & number of rows of grid. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_opponent_grid_afa7c46e421e51b1bb9ac3a5064ab5f32}\label{class_c_opponent_grid_afa7c46e421e51b1bb9ac3a5064ab5f32}} 
+\index{COpponentGrid@{COpponentGrid}!shots@{shots}}
+\index{shots@{shots}!COpponentGrid@{COpponentGrid}}
+\doxysubsubsection{\texorpdfstring{shots}{shots}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{class_c_grid_position}{C\+Grid\+Position}}, \mbox{\hyperlink{class_c_shot_aab7e90eddda5d2ee3f6a04ad17282451}{C\+Shot\+::\+Impact}}$>$ C\+Opponent\+Grid\+::shots\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shots} & a map container which keeps shot position and its impact. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_opponent_grid_a02234059f30139809a374da4af707561}\label{class_c_opponent_grid_a02234059f30139809a374da4af707561}} 
+\index{COpponentGrid@{COpponentGrid}!sunkenShips@{sunkenShips}}
+\index{sunkenShips@{sunkenShips}!COpponentGrid@{COpponentGrid}}
+\doxysubsubsection{\texorpdfstring{sunkenShips}{sunkenShips}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_ship}{C\+Ship}}$\ast$ C\+Opponent\+Grid\+::sunken\+Ships\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sunken\+Ships} & numbers of pointer to show sunken ships. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+my\+Code/\mbox{\hyperlink{_c_opponent_grid_8h}{C\+Opponent\+Grid.\+h}}\item 
+my\+Code/\mbox{\hyperlink{_c_opponent_grid_8cpp}{C\+Opponent\+Grid.\+cpp}}\end{DoxyCompactItemize}
